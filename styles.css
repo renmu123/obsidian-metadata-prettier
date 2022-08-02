@@ -1,4 +1,8 @@
-/* Sets all the text color to red! */
-body {
-    color: red;
+.frontmatter-section-container {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.frontmatter-section-label {
+	margin-right: 10px !important;
 }
