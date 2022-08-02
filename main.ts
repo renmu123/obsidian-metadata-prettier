@@ -33,11 +33,13 @@ export default class MetadataPrettierPlugin extends Plugin {
 			for (let index = 0; index < frontmatters.length; index++) {
 				const frontmatterEl = frontmatters.item(index);
 				if (!this.isEmpty(filterFrontmatter)) {
+					// @ts-expect-error
 					frontmatterEl.style = "display:block";
 					context.addChild(
 						new Metadata(frontmatterEl, filterFrontmatter)
 					);
 				} else {
+					// @ts-expect-error
 					frontmatterEl.style = "display:none";
 				}
 			}
@@ -51,6 +53,7 @@ export default class MetadataPrettierPlugin extends Plugin {
 		const newObj = {};
 		Object.entries(obj).forEach(([key, value]) => {
 			if (!excludeKeys.includes(key)) {
+				// @ts-expect-error
 				newObj[key] = value;
 			}
 		});

@@ -65,6 +65,7 @@ export class Metadata extends MarkdownRenderChild {
 						text: value,
 					});
 					valueEl.addEventListener("click", () => {
+						// @ts-expect-error
 						document.querySelector('[data-type="search"]').click();
 						this.search(`"${key}: ${value}"`);
 					});
@@ -72,7 +73,7 @@ export class Metadata extends MarkdownRenderChild {
 			}
 			containerEl.append(keyEl, valueEl);
 		});
-
+		// @ts-expect-error
 		this.containerEl.append(firstChild, containerEl);
 	}
 
