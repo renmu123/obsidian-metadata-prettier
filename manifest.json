@@ -3,8 +3,8 @@
 	"name": "Metadata prettier",
 	"version": "0.0.1",
 	"minAppVersion": "0.12.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
+	"description": "This is a obsidian plugin for metadata prettier",
 	"author": "renmu123",
-	"authorUrl": "https://obsidian.md",
+	"authorUrl": "https://github.com/renmu123/obsidian-metadata-prettier",
 	"isDesktopOnly": false
 }
