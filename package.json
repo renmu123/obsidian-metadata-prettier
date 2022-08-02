@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-metadata-prettier",
-	"version": "0.0.1",
+	"version": "0.1",
 	"description": "This is a obsidian plugin for metadata prettier",
 	"main": "main.js",
 	"scripts": {
